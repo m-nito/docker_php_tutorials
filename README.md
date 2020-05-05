@@ -53,7 +53,6 @@
           "name": "XDebug On Docker",
           "type": "php",
           "request": "launch",
-          // php.ini 内のポート番号を指定します
           "port": 9000,
           "pathMappings": {
             "/var/www/html": "${fileDirname}"
