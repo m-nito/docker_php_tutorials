@@ -17,6 +17,7 @@
 
 # docker fileの利用
 - このリポジトリの`docker_xdebug`フォルダを任意の場所に導入します。
+  - `git`であれば普通に`clone`, そうでなければ`ZIP`ダウンロードをご利用ください。
 - 導入フォルダ内(`docker-compose.yml`の配置されたフォルダ)でコマンドプロンプト(あるいはbash, powershellなど)を開きます。
 
 ![image](./readme_images/cmd.png)
