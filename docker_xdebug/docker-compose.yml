@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  php:
+    build:
+      context: ./docker
+    ports:
+      - "8081:80"
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./src:/var/www/html
+      - ./docker/php.ini:/usr/local/etc/php/php.ini
