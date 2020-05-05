@@ -43,7 +43,7 @@
 
 - 導入が終わったら、`index.php`を開きます。
   - ![Image](./readme_images/index.png)
-- `デバッグ`タブを開き、`PHP`を選択します。
+- `デバッグ`タブを開き、`create launch.json`を実行します。メニューは`PHP`を選択します。
   - ![Image](./readme_images/debug.png)
 - `Add Configuration`から設定の追加を行います。
   - 以下の設定を追加します。
