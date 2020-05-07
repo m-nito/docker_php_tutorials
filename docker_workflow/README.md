@@ -12,6 +12,9 @@
     - https://hub.docker.com/_/httpd
     - https://hub.docker.com/_/nginx
     - https://hub.docker.com/_/mysql
+- 目的に見合ったベースイメージが存在しない場合、`ubuntu`などの基本OSのイメージを利用して作成します。
+  - https://hub.docker.com/_/ubuntu/
+  - https://hub.docker.com/_/alpine
 - もし提供されたイメージの状態そのままでよいなら、`docker run -d`を実行してそのまま実行します。
   - 多くの場合はそうではないので、以降を記載します。
 
