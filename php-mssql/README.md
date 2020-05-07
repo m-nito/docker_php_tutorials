@@ -4,11 +4,11 @@
 
 - `php-xdebug`で利用したコンテナを改修した`php-apache`コンテナを、`mssql`コンテナのデータベースに接続するデモです。
   - 差分は以下の通りです。
-    - Dockefile
+    - `Dockefile`
       - mssql ドライバを追加
-    - src/index.php
+    - `src/index.php`
       - 下記参考ドキュメントの接続確認ページを利用しました。
-    - docker-compose.yml
+    - `docker-compose.yml`
       - `mssql`コンテナの定義を追加
 - アクセス可能ポートを変更し、[http://localhost:8083](http://localhost:8083)としています。
 - これをベースにして、コンテナの mssql ではなく既存データベースを利用したい場合、
