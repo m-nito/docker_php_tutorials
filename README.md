@@ -1,10 +1,10 @@
-# 目次
-
-- [目次](#%e7%9b%ae%e6%ac%a1)
 - [Docker の導入](#docker-%e3%81%ae%e5%b0%8e%e5%85%a5)
 - [docker file の利用](#docker-file-%e3%81%ae%e5%88%a9%e7%94%a8)
 - [VSCode 側の設定](#vscode-%e5%81%b4%e3%81%ae%e8%a8%ad%e5%ae%9a)
 - [docker の説明](#docker-%e3%81%ae%e8%aa%ac%e6%98%8e)
+  - [起動中コンテナの確認](#%e8%b5%b7%e5%8b%95%e4%b8%ad%e3%82%b3%e3%83%b3%e3%83%86%e3%83%8a%e3%81%ae%e7%a2%ba%e8%aa%8d)
+  - [コンテナの停止](#%e3%82%b3%e3%83%b3%e3%83%86%e3%83%8a%e3%81%ae%e5%81%9c%e6%ad%a2)
+  - [ベースイメージの変更](#%e3%83%99%e3%83%bc%e3%82%b9%e3%82%a4%e3%83%a1%e3%83%bc%e3%82%b8%e3%81%ae%e5%a4%89%e6%9b%b4)
 
 # Docker の導入
 
@@ -87,6 +87,7 @@
 # docker の説明
 
 ### 起動中コンテナの確認
+
 ```
 docker ps
 ```
@@ -95,12 +96,12 @@ docker ps
 たとえば、起動中のコンテナのコンテナ名が`docker_xdebug_php_1`であったならば、
 
 ### コンテナの停止
+
 ```
 docker stop docker_xdebug_php_1
 ```
 
 と入力することで起動中のコンテナを停止することができます。
-
 
 ### ベースイメージの変更
 
