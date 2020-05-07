@@ -1,4 +1,5 @@
 <?php
+// Taken from https://docs.microsoft.com/ja-jp/sql/connect/php/installation-tutorial-linux-mac?view=sql-server-ver15#testing-your-installation
 $serverName = "mssql,1433";
 $connectionOptions = array(
     "uid" => "sa",
