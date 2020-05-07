@@ -28,7 +28,8 @@
         RUN apt-get update -y
         RUN apt-get install -y -q nginx
     ```
-    - 複数記載できることを示すために`RUN`を分けていますが、不要ならワンライナーにまとめることを推奨します。
+    - 複数記載できることを示すために`RUN`を分けていますが、不要なら`&&`を用いてワンライナーにまとめることを推奨します。
+      - 特に`RUN apt-get update`後に別個に`RUN`を実行すると、キャッシュの関係で予期しない動作をすることがあります。
     - 後述する`compose`を利用しないならば、`EXPOSE`文を用いたポート指定や、`VOLUME`文を用いたマウント指定を記載します。
     - 参考：http://blog.flup.jp/2016/02/12/devenv_nginx_with_docker/
     - このリポジトリの`dockerfile-example`ディレクトリに実例としてファイルが配置してあります。
