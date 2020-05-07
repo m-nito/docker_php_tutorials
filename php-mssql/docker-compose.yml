@@ -1,0 +1,21 @@
+version: "3.7"
+services:
+  php-apache:
+    container_name: php-apache
+    build:
+      context: ./docker
+    ports:
+      - "8083:80"
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./src:/var/www/html
+      - ./docker/php.ini:/usr/local/etc/php/php.ini
+  mssql:
+    container_name: mssql
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: P@ssw0rd
+    ports:
+      - "1433:1433"
