@@ -87,7 +87,8 @@
     - これは`nginx`がデフォルトで表示するページとなります。
 
 - `docker-compose.yml`が配置されたディレクトリで、コマンドプロンプト等から`docker-compose up -d`を実行します。
-  - コンテナが起動しているので、ブラウザから[http://localhost:8085](http://localhost:8085)にアクセスすると、`index.html`が表示されます。
+  - （まだ存在しないなら）イメージのビルドと、コンテナの起動を同時に行います。
+  - コマンドを実行したならコンテナが起動しているので、ブラウザから[http://localhost:8085](http://localhost:8085)にアクセスすると、`index.html`が表示されます。
 - `docker-compose down`を実行すると、コンテナが終了します。（一時停止ではないので注意してください）
 - `Dockerfile`などコンテナの定義を変更したなら、コンテナを終了した上で`docker-compose build`で再度ビルドを行えます。
 
