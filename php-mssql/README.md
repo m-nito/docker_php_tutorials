@@ -20,5 +20,6 @@
 
 - `php-apache`コンテナでの設定手順は Microsoft 公式ドキュメントを参照しました。
   - https://docs.microsoft.com/ja-jp/sql/connect/php/installation-tutorial-linux-mac?view=sql-server-ver15
-- `mssql`コンテナ構築については、`dockerhub`内のドキュメントを参照しました。
+- `mssql`コンテナ構築についてはMicrosoft公式ドキュメントおよび`dockerhub`内のドキュメントを参照しました。
+  - https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver15&pivots=cs1-bash
   - https://hub.docker.com/_/microsoft-mssql-server
